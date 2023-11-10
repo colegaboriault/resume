@@ -1,0 +1,201 @@
+% arara: xelatex
+% arara: xelatex
+
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \bfseries Cole Gaboriault}
+
+4048 Powelton Avenue\ \ \textbullet
+\ \ Philadelphia, PA 19104
+\\
+(267) 809-0199\ \ \textbullet
+\ \ cgabor@sas.upenn.edu
+\end{center}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\bfseries University of Pennsylvania}
+		{\bfseries Philadelphia, PA}
+	\\
+	\headerrow
+		{Bachelor of Arts, \em Summa Cum Laude, Phi Beta Kappa, GPA: 3.99}
+		{\em 2018 -- 2022}
+	\\
+	\headerrow
+		{Physics, Linguistics, Classical Studies; Minors: Mathematics, Archaeological Science}{}
+
+	\item
+	\headerrow
+		{\bfseries Penncrest High School}
+		{\bfseries Media, PA}
+	\\
+	\headerrow
+		{}
+		{\em 2014 -- 2018}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Work Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\bfseries Gregory College House}
+		{\bfseries University of Pennsylvania}
+	\\
+	\headerrow
+		{\em House Manager, Teaching Assistant}
+		{\em 2021 -- 2022}
+	Scheduled, coordinated, and ran events for residents of Gregory College House;
+	led several weekly series of film screenings and discussions for the for-credit Film Culture Residential Program.
+
+	\item
+	\headerrow
+		{\bfseries Mauger Group}
+		{\bfseries University of Pennsylvania}
+	\\
+	\headerrow
+		{\em Neutrino Physics Researcher}
+		{\em Summer 2019}
+	\\
+	Used CERN's Geant4 toolkit in \CPP{} to develop accurate simulations of muon capture in water.
+
+	\item
+	\headerrow
+		{\bfseries MedCrypt}
+		{\bfseries www.medcrypt.co}
+	\\
+	\headerrow
+		{\em Machine Learning Intern}
+		{\em Summer 2016}
+	\\
+	Wrote a decision tree algorithm in Scala for identifying potentially malicious network activity.
+
+	\item
+	\headerrow
+		{\bfseries ColdLight Solutions}
+		{\bfseries Wayne, PA}
+	\\
+	\headerrow
+		{\em Machine Learning Intern}
+		{\em Summer 2015}
+	\\
+	Worked with a senior AI scientist to implement a new decision tree engine in Java.
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Achievements}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\bfseries Appalachian Trail}
+		{\em March -- September 2023}
+	Backpacked the 2,198.4 mile continous footpath from Springer Mountain, Georgia to Mount Katahdin, Maine.
+
+	\item
+	\headerrow
+		{\bfseries 6abc Best in Class}
+		{\em 2018}
+	Selected by teachers and faculty to represent Penncrest High School at the annual 6abc Best in Class event.
+
+	\item
+	\headerrow
+		{\bfseries National Conservation Foundation Envirothon}
+		{\em 2017}
+	Won first place individually and as a five-person team at the 2017 international NCF Envirothon after winning the Delaware County and Pennsylvania state competitions.
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Volunteering}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\bfseries Team Assist}
+		{\em 2014 -- 2018}
+	Provided tech support at Penncrest High School's student-run IT help desk;
+	helped manage a small 3D printing business to raise funds.
+
+	\item
+	\headerrow
+		{\bfseries Friends of Glen Providence Park}
+		{\em 2011 -- present}
+	Participated in citizen science projects, annual park cleanups, invasive plant removal,
+	and annual National Public Lands Day plantings.
+
+	\item
+	\headerrow
+		{\bfseries Delaware County Institute of Science}
+		{\em 2014 -- present}
+	Presented two lectures to the Junior DCIS Club, one to commemorate Pi Day and one tracing the history of physics through optics; assisted with various other projects including the accessioning of museum collections.
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Skills}
+
+\begin{itemize}
+
+	\item[]
+	Programming languages: Java, Scala, POSIX Shell, HTML, CSS, C, \CPP{}
+
+\end{itemize}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Interests}
+
+\begin{itemize}
+
+	\item[]
+	Stealing
+
+\end{itemize}
+
+\end{document}
+}
